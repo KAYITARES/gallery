@@ -31,8 +31,8 @@ class CategoryTestClass(TestCase):
     def tearDown(self):
         self.pic.delete_category()
     
-    # def test_updating_category(self):
-    #     category = Category.get_category_id(self.pic.id)
-    #     category.update_category('SUV')
-    #     category = Category.get_category_id(self.pic.id)
-    #     self.assertTrue(category.photo_category == 'SUV')
+    def test_updating_category(self):
+        category = Category.get_category_id(self.pic.id)
+        category.update_category('SUV')
+        category = Category.get_category_id(self.pic.id)
+        self.assertTrue(category.photo_category == 'SUV')
