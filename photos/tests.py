@@ -49,10 +49,10 @@ class ImageTestCase(TestCase):
         self.image = Image(name='Lamborghini', description='very first car', location=self.Rwanda, category=self.pic)
         self.image.save_image()
     
-    # def tearDown(self):
-    #     self.image.delete_image()
-    #     self.pic.delete_category()
-    #     self.Rwanda.delete_location()
+    def tearDown(self):
+        self.image.delete_image()
+        self.pic.delete_category()
+        self.Rwanda.delete_location()
     
     # def test_get_all_images(self):
     #     images = Image.get_all_images()
