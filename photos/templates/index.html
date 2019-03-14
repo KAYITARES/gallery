@@ -2,7 +2,9 @@
 
 {% block content %}
 {{block.super}}
+<div class="container">
 {% for imgz in images %}
 <img src="{{imgz.image.url}}">
 {% endfor %}
+</div>
 {% endblock %}
