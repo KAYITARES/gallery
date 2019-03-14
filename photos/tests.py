@@ -20,3 +20,8 @@ class LocationTestClass(TestCase):
         self.assertTrue(location.photo_location == 'Kitengela')
     def tearDown(self):
         self.Rwanda.delete_location()
+class CategoryTestClass(TestCase):
+        #creating a new category and saving it
+    def setUp(self):
+        self.pic= Category(photo_category='pic')
+        self.pic.save_category()
