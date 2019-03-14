@@ -25,3 +25,14 @@ class CategoryTestClass(TestCase):
     def setUp(self):
         self.pic= Category(photo_category='pic')
         self.pic.save_category()
+    def test_instance(self):
+        self.assertTrue(isinstance(self.pic,Category))
+    
+    # def tearDown(self):
+    #     self.pic.delete_category()
+    
+    # def test_updating_category(self):
+    #     category = Category.get_category_id(self.pic.id)
+    #     category.update_category('SUV')
+    #     category = Category.get_category_id(self.pic.id)
+    #     self.assertTrue(category.photo_category == 'SUV')
