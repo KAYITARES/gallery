@@ -65,7 +65,3 @@ class ImageTestCase(TestCase):
     def test_search_image(self):
         images = Image.search_image('pic')
         self.assertTrue(len(images)>0)
-    
-    # def test_filter_by_location(self):
-    #     images = Image.filter_by_location('Rwanda')
-    #     self.assertTrue(len(images)>0)
