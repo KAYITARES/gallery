@@ -58,9 +58,9 @@ class ImageTestCase(TestCase):
         images = Image.get_all_images()
         self.assertTrue(len(images)>0)
     
-    # def test_get_image_by_id(self):
-    #     images = Image.get_image_by_id(self.image.id)
-    #     self.assertTrue(images == self.image)
+    def test_get_image_by_id(self):
+        images = Image.get_image_by_id(self.image.id)
+        self.assertTrue(images == self.image)
 
     # def test_search_image(self):
     #     images = Image.search_image('pic')
