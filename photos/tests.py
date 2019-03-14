@@ -54,9 +54,9 @@ class ImageTestCase(TestCase):
         self.pic.delete_category()
         self.Rwanda.delete_location()
     
-    # def test_get_all_images(self):
-    #     images = Image.get_all_images()
-    #     self.assertTrue(len(images)>0)
+    def test_get_all_images(self):
+        images = Image.get_all_images()
+        self.assertTrue(len(images)>0)
     
     # def test_get_image_by_id(self):
     #     images = Image.get_image_by_id(self.image.id)
