@@ -4,3 +4,6 @@ from .models import Location,Category,Image
 class LocationTestClass(TestCase):
     def setUp(self):
         self.Rwanda= Location(photo_location="Rwanda")
+       #Testing  instance
+    def test_instance(self):
+        self.assertTrue(isinstance(self.Rwanda,Location)) 
