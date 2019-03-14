@@ -1,0 +1,8 @@
+{% extends 'all-photos/base.html' %}
+
+{% block content %}
+{{block.super}}
+{% for imgz in images %}
+<img src="{{imgz.image.url}}">
+{% endfor %}
+{% endblock %}
