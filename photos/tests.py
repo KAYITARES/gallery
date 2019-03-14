@@ -18,5 +18,5 @@ class LocationTestClass(TestCase):
         location.update_location('Kitengela')
         location = Location.get_location_id(self.Rwanda.id)
         self.assertTrue(location.photo_location == 'Kitengela')
-    # def tearDown(self):
-    #     self.Rwanda.delete_location()
+    def tearDown(self):
+        self.Rwanda.delete_location()
