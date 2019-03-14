@@ -36,3 +36,36 @@ class CategoryTestClass(TestCase):
         category.update_category('SUV')
         category = Category.get_category_id(self.pic.id)
         self.assertTrue(category.photo_category == 'SUV')
+
+class ImageTestCase(TestCase):
+    # Set Up Method
+    def setUp(self):
+        self.pic = Category(photo_category='pic')
+        self.pic.save_category()
+
+        self.Rwanda = Location(photo_location='Rwanda')
+        self.Rwanda.save_location()
+
+        self.image = Image(name='Lamborghini', description='very first car', location=self.Rwanda, category=self.pic)
+        self.image.save_image()
+    
+    # def tearDown(self):
+    #     self.image.delete_image()
+    #     self.pic.delete_category()
+    #     self.Rwanda.delete_location()
+    
+    # def test_get_all_images(self):
+    #     images = Image.get_all_images()
+    #     self.assertTrue(len(images)>0)
+    
+    # def test_get_image_by_id(self):
+    #     images = Image.get_image_by_id(self.image.id)
+    #     self.assertTrue(images == self.image)
+
+    # def test_search_image(self):
+    #     images = Image.search_image('pic')
+    #     self.assertTrue(len(images)>0)
+    
+    # def test_filter_by_location(self):
+    #     images = Image.filter_by_location('Rwanda')
+    #     self.assertTrue(len(images)>0)
