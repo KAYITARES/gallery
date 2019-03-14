@@ -28,8 +28,8 @@ class CategoryTestClass(TestCase):
     def test_instance(self):
         self.assertTrue(isinstance(self.pic,Category))
     
-    # def tearDown(self):
-    #     self.pic.delete_category()
+    def tearDown(self):
+        self.pic.delete_category()
     
     # def test_updating_category(self):
     #     category = Category.get_category_id(self.pic.id)
