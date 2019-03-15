@@ -2,10 +2,10 @@
 gallery is a photo web application that shows different image category
 March 15th, 2019
 By Richard Waweru
-<!-- Description
-Zoom is a simple photo gallery web application to showcase beautiful pictures and designs. Users get to view photos updated by the site admin. Users can see photos based on the location, by clicking on the listed locations in the menu. They can also copy the link to a photo to paste at their discretion. The search functionality will search photos based on the categories.
+## Description
+Gallery is a website application that shows different image. Users have to see photos and search the images based on the category and also user can copy the link of the images by right clicking on the prefered image.Admin uploads images,delete and update the images, is for the admin that have all right for the images seen by the users as he/she can delete/update and add pictures. 
 
-Specifications
+<!-- Specifications
 Get the specs here
 
 Set Up and Installations
@@ -56,4 +56,4 @@ Support and contact details
 Contact me on developer.waweru@gmail.com for any comments, reviews or advice.
 
 License
-Copyright (c) Richard Waweru  -->
+Copyright (c) Richard Waweru  --> -->
