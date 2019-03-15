@@ -1,7 +1,7 @@
 ### GALLERY
 gallery is a photo web application that shows different image category
 March 15th, 2019
-By Richard Waweru
+By Kayitare.C
 ## Description
 Gallery is a website application that shows different image. Users have to see photos and search the images based on the category and also user can copy the link of the images by right clicking on the prefered image.Admin uploads images,delete and update the images, is for the admin that have all right for the images seen by the users as he/she can delete/update and add pictures. 
 
@@ -39,7 +39,7 @@ Install dependancies that will create an environment for the app to run pip3 ins
 Create .env file and paste paste the following filling where appropriate:
 
 SECRET_KEY = '<Secret_key>'
-DBNAME = 'zoom'
+DBNAME = 'galleryz'
 USER = '<Username>'
 PASSWORD = '<password>'
 DEBUG = True
@@ -66,4 +66,6 @@ get-image-by-id and filter by location doesn't work
  * for any support please contact me on cyntkayitare@gmail.com or
  * phone:0788774039 
 
-<!--  -->
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+Copyright (c) 2019 **Kayitare cynthia**
