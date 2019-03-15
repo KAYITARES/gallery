@@ -21,3 +21,13 @@ def search(request):
     else:
         message = "You haven't searched for any term"
         return render(request, 'all-photos/search.html',{"message":message})
+def single_image(request, category_name, image_id):
+    # print(image_category)
+    locations = Location.objects.all()
+
+    image = Image.get_image_by_id(image_id)
+    # Get category name
+    # print(category_name)
+    image_category = Image.objects.filter(category__photo_category = category_name)
+    title = f'{category_name}'
+    return render(request,'single_image.html',{'title':title, 'image':image, 'image_category':image_category, 'locations':locations})
