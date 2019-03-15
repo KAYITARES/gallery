@@ -29,10 +29,10 @@ Gallery is a website application that shows different image. Users have to see p
 Activate virtual environment using python3.6 as default handler
 
 virtualenv -p /usr/bin/python3.6 venv && source venv/bin/activate
-<!-- Install dependancies
+## Install dependancies
 Install dependancies that will create an environment for the app to run pip3 install -r requirements.txt
 
-Create the Database
+<!-- Create the Database
 psql
 CREATE DATABASE zoom;
 .env file
@@ -64,4 +64,4 @@ Support and contact details
 Contact me on developer.waweru@gmail.com for any comments, reviews or advice.
 
 License
-Copyright (c) Richard Waweru  --> --> --> --> --> -->
+Copyright (c) Richard Waweru  --> --> --> --> --> --> -->
