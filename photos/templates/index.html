@@ -2,9 +2,60 @@
 
 {% block content %}
 {{block.super}}
+<html>
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <boby>
+            <div class="container-fluid">
+                    <div class="row">
+                        {% for img in images %}
+                           
+                                    <a data-toggle="modal" data-target="#{{img.id}}" ><img src="{{img.image.url}}"></a>           
+                  
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="container">
+                {% for img in images %}
+                
+                <div class="modal fade bd-example-modal-lg" id="{{img.id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                
+                                <div class="row">
+                                    <div class="col-md-12 modal-image">
+                                        <a href="/image/{{img.category.photo_category}}/{{img.id}}">
+                                            <img src="{{img.image.url}}" alt="{{img.name}}" height="700px" width="870px"><br><br>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-12 modal-text">
+                                        <h5 class="modal-title" id="modal-title">Name: {{img.name}} </h5>
+                                        <hr>
+                                        <p>Description: {{img.description}}</p>
+                                        <p class="small">Posted on: <span class="font-weight-bold">{{img.post_date|timesince}}</span> ago </p>
+                                        <p class="small">Category: <span class="font-weight-bold">{{img.category.photo_category}}</span></p>
+                                        <p class="small">Located at:  <span class="font-weight-bold">{{img.location.photo_location }}</span></p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item"> Share
+                                                
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div> 
+                                </div>
+                                <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                      </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
 
-{% for imgz in images %}
-<img src="{{imgz.image.url}}" class="img-responsive" alt="Image" height="350px" width="350px">
+    </boby>
+</html>
+
 {% endfor %}
-
 {% endblock %}
