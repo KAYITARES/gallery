@@ -21,14 +21,15 @@ Gallery is a website application that shows different image. Users have to see p
 * django==1.11
 * bootsrap
 
-<!-- Clone the Repo
-Run the following command on the terminal: git clone https://github.com/DevWaweru/Zoom.git && cd Zoom
+## Clone the Repo
+* Run the following command on the terminal: git clone https://github.com/KAYITARES/gallery.git 
+* type cd gallery on terminal
 
-Activate virtual environment
+## Activate virtual environment
 Activate virtual environment using python3.6 as default handler
 
 virtualenv -p /usr/bin/python3.6 venv && source venv/bin/activate
-Install dependancies
+<!-- Install dependancies
 Install dependancies that will create an environment for the app to run pip3 install -r requirements.txt
 
 Create the Database
@@ -63,4 +64,4 @@ Support and contact details
 Contact me on developer.waweru@gmail.com for any comments, reviews or advice.
 
 License
-Copyright (c) Richard Waweru  --> --> --> -->
+Copyright (c) Richard Waweru  --> --> --> --> --> -->
