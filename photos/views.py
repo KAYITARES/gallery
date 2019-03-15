@@ -31,3 +31,10 @@ def single_image(request, category_name, image_id):
     image_category = Image.objects.filter(category__photo_category = category_name)
     title = f'{category_name}'
     return render(request,'single_image.html',{'title':title, 'image':image, 'image_category':image_category, 'locations':locations})
+def display_location(request,location_id):
+    try:
+        location = Location.objects.get(id = location_id)
+        images = Image.objects.filter(image_location = location.id)
+    except:
+        raise Http404()
+    return render(request,'location.html',{'location':location,'images':images})
