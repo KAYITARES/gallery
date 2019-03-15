@@ -12,13 +12,16 @@ Gallery is a website application that shows different image. Users have to see p
 
 3. user can click on copy link button and copy the link of the image.
 
-<!-- Set Up and Installations
-Prerequisites
-Ubuntu Software
-Python3.6
-Postgres
-python virtualenv
-Clone the Repo
+## Set Up and Installations
+* Prerequisites
+* Ubuntu Software
+* Python3.6
+* Postgres
+* python virtualenv
+* django==1.11
+* bootsrap
+
+<!-- Clone the Repo
 Run the following command on the terminal: git clone https://github.com/DevWaweru/Zoom.git && cd Zoom
 
 Activate virtual environment
@@ -60,4 +63,4 @@ Support and contact details
 Contact me on developer.waweru@gmail.com for any comments, reviews or advice.
 
 License
-Copyright (c) Richard Waweru  --> --> -->
+Copyright (c) Richard Waweru  --> --> --> -->
