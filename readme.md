@@ -38,11 +38,11 @@ Install dependancies that will create an environment for the app to run pip3 ins
 ## .env file
 Create .env file and paste paste the following filling where appropriate:
 
-SECRET_KEY = '<Secret_key>'
-DBNAME = 'galleryz'
-USER = '<Username>'
-PASSWORD = '<password>'
-DEBUG = True
+* SECRET_KEY = '<Secret_key>'
+* DBNAME = 'galleryz'
+* USER = '<Username>'
+* PASSWORD = '<password>'
+* DEBUG = True
 ## Run initial Migration
 python3.6 manage.py migrate
 python3.6 manage.py check
@@ -53,7 +53,7 @@ python3.6 manage.py runserver
 Open terminal on localhost:8000
 
 ## Known bugs
-get-image-by-id and filter by location doesn't work
+get image by-id and filter by location doesn't work
 
 ## Technologies used
 - Python 3.6
