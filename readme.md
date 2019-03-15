@@ -52,10 +52,10 @@ python3.6 manage.py migrate
 python3.6 manage.py runserver
 Open terminal on localhost:8000
 
-<!-- Known bugs
-Copy functionality does not work
+## Known bugs
+get-image-by-id and filter by location doesn't work
 
-Technologies used
+<!-- Technologies used
 - Python 3.6
 - HTML
 - Bootstrap 4
@@ -66,4 +66,4 @@ Support and contact details
 Contact me on developer.waweru@gmail.com for any comments, reviews or advice.
 
 License
-Copyright (c) Richard Waweru  --> --> --> --> --> --> --> --> --> -->
+Copyright (c) Richard Waweru  --> --> --> --> --> --> --> --> --> --> -->
