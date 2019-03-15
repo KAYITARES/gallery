@@ -43,14 +43,16 @@ DBNAME = 'zoom'
 USER = '<Username>'
 PASSWORD = '<password>'
 DEBUG = True
-<!-- Run initial Migration
-python3.6 manage.py makemigrations album
+## Run initial Migration
 python3.6 manage.py migrate
-Run the app
+python3.6 manage.py check
+python manage.py makemigrations photos
+python3.6 manage.py sqlmigrate photos 0001
+python3.6 manage.py migrate
 python3.6 manage.py runserver
 Open terminal on localhost:8000
 
-Known bugs
+<!-- Known bugs
 Copy functionality does not work
 
 Technologies used
@@ -64,4 +66,4 @@ Support and contact details
 Contact me on developer.waweru@gmail.com for any comments, reviews or advice.
 
 License
-Copyright (c) Richard Waweru  --> --> --> --> --> --> --> --> -->
+Copyright (c) Richard Waweru  --> --> --> --> --> --> --> --> --> -->
