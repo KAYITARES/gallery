@@ -35,7 +35,7 @@ Install dependancies that will create an environment for the app to run pip3 ins
 ## Create the Database
 * psql
 * CREATE DATABASE galleryz;
-<!-- .env file
+## .env file
 Create .env file and paste paste the following filling where appropriate:
 
 SECRET_KEY = '<Secret_key>'
@@ -43,7 +43,7 @@ DBNAME = 'zoom'
 USER = '<Username>'
 PASSWORD = '<password>'
 DEBUG = True
-Run initial Migration
+<!-- Run initial Migration
 python3.6 manage.py makemigrations album
 python3.6 manage.py migrate
 Run the app
@@ -64,4 +64,4 @@ Support and contact details
 Contact me on developer.waweru@gmail.com for any comments, reviews or advice.
 
 License
-Copyright (c) Richard Waweru  --> --> --> --> --> --> --> -->
+Copyright (c) Richard Waweru  --> --> --> --> --> --> --> --> -->
