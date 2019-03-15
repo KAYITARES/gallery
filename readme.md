@@ -62,8 +62,8 @@ get-image-by-id and filter by location doesn't work
 - JavaScript
 - Heroku for the deployment
 - Postgresql for the database
-<!-- Support and contact details
-Contact me on developer.waweru@gmail.com for any comments, reviews or advice.
+## Support and contact details
+ * for any support please contact me on cyntkayitare@gmail.com or
+ * phone:0788774039 
 
-License
-Copyright (c) Richard Waweru  --> --> --> --> --> --> --> --> --> --> --> -->
+<!--  -->
