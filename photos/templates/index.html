@@ -11,12 +11,12 @@
                     <div class="row">
                         {% for img in images %}
                            
-                                    <a data-toggle="modal" data-target="#{{img.id}}" ><img src="{{img.image.url}}"></a>           
+                                    <a data-toggle="modal" data-target="#{{img.id}}"style="cursor:pointer" ><img src="{{img.image.url}}"></a>           
                   
                         {% endfor %}
                     </div>
-                </div>
-                <div class="container">
+                
+                
                 {% for img in images %}
                 
                 <div class="modal fade bd-example-modal-lg" id="{{img.id}}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
