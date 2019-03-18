@@ -46,7 +46,7 @@ class Image(models.Model):
     name = models.CharField(max_length=30)
     description = models.TextField()
     post_date = models.DateTimeField(auto_now_add=True)
-    location = models.ForeignKey(Location)
+    location = models.ForeignKey(Location, on_delete = models.CASCADE)
     category = models.ForeignKey(Category)
     class Meta:
         ordering = ('-id',)
