@@ -8,7 +8,7 @@ urlpatterns=[
     url('^$',views.index,name ='home'),
     url(r'^search/', views.search, name='search_images'),
     url(r'^location/(\d+)',views.display_location,name='displayLocation'),
-    url(r'^image/(?P<category_name>\w+)/(?P<image_id>\d+)',views.single_image, name='art'),
+    url(r'^image/(\d+)',views.single_image, name='art'),
     
 ]
 if settings.DEBUG:

@@ -21,20 +21,13 @@ def search(request):
     else:
         message = "You haven't searched for any term"
         return render(request, 'all-photos/search.html',{"message":message})
-def single_image(request, category_name, image_id):
-    # print(image_category)
-    locations = Location.objects.all()
-
-    image = Image.get_image_by_id(image_id)
-    # Get category name
-    # print(category_name)
-    image_category = Image.objects.filter(category__photo_category = category_name)
-    title = f'{category_name}'
-    return render(request,'single_image.html',{'title':title, 'image':image, 'image_category':image_category, 'locations':locations})
+def single_image(request,image_id):
+    an_image= Image.objects.get(id=image_id)
+    return render(request,'single_image.html',{'an_image':an_image})
 def display_location(request,location_id):
     try:
         location = Location.objects.get(id = location_id)
-        images = Image.objects.filter(image_location = location.id)
+        images = Image.objects.filter(location = location.id)
     except:
         raise Http404()
     return render(request,'location.html',{'location':location,'images':images})
